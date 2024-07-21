@@ -304,3 +304,7 @@ main {
 .person p {
   color: var(--grey-500);
 }
+
+.clearbtn {
+  margin-top: 2rem;
+}

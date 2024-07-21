@@ -1,9 +1,9 @@
-import { useState } from 'react'
-import data from './data'
-import List from './List'
+import { useState } from 'react';
+import data from './data';
+import List from './List';
 
 const App = () => {
-  const [people, setPeople] = useState(data)
+  const [people, setPeople] = useState(data);
 
   return (
     <main>
@@ -12,7 +12,7 @@ const App = () => {
         <div className="title-underline"></div>
         <List people={people} />
         <button
-          className="btn-block btn"
+          className="btn-block btn clearbtn"
           type="button"
           onClick={() => setPeople([])}
         >
@@ -20,7 +20,7 @@ const App = () => {
         </button>
       </section>
     </main>
-  )
-}
+  );
+};
 
-export default App
+export default App;
